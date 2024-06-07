@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autonomous Vehicles meet Multimodal Foundation Models</title>
+  <title>Multimodal Large Language Models for Autonomous Driving</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -11,7 +11,7 @@
     }
     .jumbotron {
       position: relative;
-      background: url('milan.jpg') no-repeat center center;
+      background: url('images/milan-banner2.jpeg') no-repeat center center;
       background-size: cover;
       color: white;
       height: 100vh;
@@ -59,7 +59,7 @@
   <!-- Header -->
   <header class="jumbotron">
     <div class="container">
-      <h1 class="display-4">Autonomous Vehicles meet Multimodal Foundation Models</h1>
+      <h1 class="display-4">Multimodal Large Language Models for Autonomous Driving</h1>
       <p class="lead">ECCV 2024 Workshop</p>
       <p>September 29, 2024 | MiCo Milano</p>
       <div class="nav-links">
@@ -79,10 +79,11 @@
       <div class="container">
         <h2 class="text-center mb-4">Overview</h2>
         <p>Building safe and intelligent Autonomous Vehicles (AVs) capable of human-like reasoning is a challenging
-          problem, pushing the limits of computer vision. Current AV systems struggle with diverse and unseen driving
-          scenarios, necessitating a shift in research focus. Recently, multimodal large language models (MLLMs)
-          have shown great promise in understanding human intent and solving complex problems. This workshop explores
-          leveraging MLLMs to tackle key challenges in AV design.</p>
+        problem, pushing the limits of computer vision. Current AV systems struggle with diverse and unseen driving
+        scenarios, necessitating a shift in research focus. Recently, multimodal language models (MMLMs)
+        have shown great promise in understanding human intent and solving complex problems.
+        Such models not only showcase incredible capabilities in understanding human intent and solving complex and unstructured problems, but scale gracefully with data and compute.
+        This workshop explores leveraging MMLMs to tackle key challenges in AV.</p>
       </div>
     </section>
     <hr>
@@ -176,13 +177,21 @@
         <p>The submission needs to be submitted to the CMT system: <a href="https://cmt3.research.microsoft.com/MLLMAV2024" target="_blank">https://cmt3.research.microsoft.com/MLLMAV2024</a>.</p>
         <h4>Topics</h4>
         <ul>
-          <li>General system design of MLLMs</li>
-          <li>Perception</li>
-          <li>Motion prediction</li>
-          <li>Trajectory planning</li>
-          <li>Simulation and world models</li>
-          <li>End-to-end solutions</li>
-          <li>Testing and safety</li>
+          <li><strong>General system design of MMLMs for AV</strong>: The integration of MMLMs into AVs necessitates a
+            reevaluation of data collection and usage, training and evaluation
+            methodologies, and the overall system architecture. </li>
+          <li><strong>Perception</strong>: How can we leverage MMLMs to build more robust and powerful perception models in AV?
+            Can we have a systematic way to deal with "tail" examples that are hard for traditional methods but easy for a human
+            driver?</li>
+          <li><strong>Motion prediction</strong>: Can we use MMLMs to better understand the intents
+            of other traffic participants and accurately forecast the movements of them?</li>
+          <li><strong>Trajectory planning</strong>: Can we use MMLMs to enable more sophisticated and adaptable planning
+            algorithms that account for a wider range of variables and scenarios, leading to safer and more efficient
+            navigation?</li>
+          <li><strong>Simulation and world models</strong>: Can MMLMs help generate more realistic and comprehensive simulation
+            environments or build world models?</li>
+          <li><strong>End-to-end solutions</strong>: Can MMLMs play a crucial role in end-to-end AV solutions?</li>
+          <li><strong>Testing and safety</strong>: Can MMLMs make our AV system safer?</li>
         </ul>
         <h4>Important Dates</h4>
         <ul>
@@ -254,7 +263,7 @@
   <!-- Footer -->
   <footer class="py-4 bg-dark text-white text-center">
     <div class="container">
-      <p>ECCV workshop &copy; 2024</p>
+      <p>ECCV workshop MLLMAV &copy; 2024</p>
     </div>
   </footer>
 
