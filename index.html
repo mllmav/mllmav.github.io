@@ -177,7 +177,7 @@
     <section id="call-for-papers">
       <div class="container">
         <h2 class="text-center mb-4">Call for Papers</h2>
-        <p>We welcome authors to submit their papers in two different formats: full-paper version (4-8 pages) and short-abstract version (2-pages). The full-paper should describe the work that has not been published or accepted recently. The short-abstract highlights the significant work that has been published or accepted recently. Please use the ECCV 2024 paper template and follow the ECCV submission guidelines. Accepted papers will be posted on the website, but there will not be archival proceedings.</p>
+        <p>We welcome authors to submit their papers in two different formats: full-paper version (<s>4-8</s> 8-14 pages) and short-abstract version (<s>2</s> 4-pages). The full-paper should describe the work that has not been published or accepted recently. The short-abstract highlights the significant work that has been published or accepted recently. Please use the ECCV 2024 paper template and follow the ECCV submission guidelines. Accepted papers will be posted on the website, but there will not be archival proceedings.</p>
         <p>The submission needs to be submitted to the CMT system: <a href="https://cmt3.research.microsoft.com/MLLMAV2024" target="_blank">https://cmt3.research.microsoft.com/MLLMAV2024</a>.</p>
         <h4>Topics</h4>
         <ul>
@@ -216,17 +216,17 @@
           <div class="col-md-4 text-center">
             <img src="images/yan_wang.jpeg" class="img-fluid rounded-circle mb-2 speaker-img" alt="Yan Wang">
             <h5>Yan Wang</h5>
-            <p>NVIDIA</p>
+            <p>NVIDIA<br><a id="yanwang_email" href="#"></a></p>
           </div>
           <div class="col-md-4 text-center">
             <img src="images/yurong.jpeg" class="img-fluid rounded-circle mb-2 speaker-img" alt="Yurong You">
             <h5>Yurong You</h5>
-            <p>NVIDIA</p>
+            <p>NVIDIA<br><a id="yurongyou_email" href="#"></a></p>
           </div>
           <div class="col-md-4 text-center">
             <img src="images/kashyap.jpeg" class="img-fluid rounded-circle mb-2 speaker-img" alt="Kashyap Chitta">
             <h5>Kashyap Chitta</h5>
-            <p>University of Tübingen</p>
+            <p>University of Tübingen<br><a id="kashyap_email" href="#"></a></p>
           </div>
           <div class="col-md-4 text-center">
             <img src="images/yue_wang.jpeg" class="img-fluid rounded-circle mb-2 speaker-img" alt="Yue Wang">
@@ -274,5 +274,33 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Base64 encoded email address
+    var yanwang = "eWFud2FuQG52aWRpYS5jb20=";
+    var yurongyou = "eXVyb25neUBudmlkaWEuY29tCg==";
+    var kashyap = "a2FzaHlhcC5jaGl0dGFAdW5pLXR1ZWJpbmdlbi5kZQ==";
+
+    // Function to decode Base64
+    function decodeBase64(encodedStr) {
+      return atob(encodedStr);
+    }
+
+    // Decode the email and set it in the span
+    // Set the email in the link
+    var decodedEmail = decodeBase64(yanwang);
+    var emailLink = document.getElementById("yanwang_email");
+    emailLink.href = "mailto:" + decodedEmail;
+    emailLink.innerHTML = decodedEmail;
+
+    var decodedEmail = decodeBase64(yurongyou);
+    var emailLink = document.getElementById("yurongyou_email");
+    emailLink.href = "mailto:" + decodedEmail;
+    emailLink.innerHTML = decodedEmail;
+
+    var decodedEmail = decodeBase64(kashyap);
+    var emailLink = document.getElementById("kashyap_email");
+    emailLink.href = "mailto:" + decodedEmail;
+    emailLink.innerHTML = decodedEmail;
+  </script>
 </body>
 </html>
